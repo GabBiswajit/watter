@@ -106,7 +106,7 @@ h1, h2, h3 {
     font-family: 'Orbitron', monospace;
     font-size: 1.5rem;
     font-weight: 900;
-    color: var(--primary-color);
+    color: rgb(76 145 217 / 80%);
 }
 
 .nav-menu {
