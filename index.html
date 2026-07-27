@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watter Craft - Minecraft Server</title>
+    <meta name="description" content="Join Watter Craft Minecraft Server - Java & Bedrock Compatible. IP: play.wattercraft.fun">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/logo.svg" alt="Watter Craft" class="nav-logo">
+                <span class="nav-title">Watter Craft</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#server-info" class="nav-link">Server Info</a>
+                <a href="#join" class="nav-link">How to Join</a>
+                <a href="#rules" class="nav-link">Rules</a>
+                <a href="#discord" class="nav-link">Discord</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Watter Craft</h1>
+            <p class="hero-subtitle">Experience Minecraft like never before</p>
+            <div class="server-status-card">
+                <div class="status-indicator" id="status-indicator">
+                    <div class="status-dot"></div>
+                    <span id="status-text">Checking...</span>
+                </div>
+                <div class="server-ip-section">
+                    <div class="server-ip">
+                        <span>play.wattercraft.fun</span>
+                        <button class="copy-btn" id="copy-ip-btn" title="Copy IP">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="player-count" id="player-count">
+                    <i class="fas fa-users"></i>
+                    <span id="player-count-text">-- / --</span>
+                </div>
+            </div>
+            <div class="hero-actions">
+                <a href="https://minecraftpocket-servers.com/server/133855/" class="btn btn-primary">Vote</a>
+                <a href="https://discord.gg/5AUqzfraZg" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    Discord
+                </a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Server Information -->
+    <section id="server-info" class="section">
+        <div class="container">
+            <h2 class="section-title">Server Information</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Server IP</h3>
+                    <p>play.wattercraft.fun</p>
+                    <button class="copy-btn-small" data-copy="play.wattercraft.fun">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Game Mode</h3>
+                    <p>Skyblock</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Version</h3>
+                    <p>1.20.1 to 1.26.30 Compatible</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Uptime</h3>
+                    <p>24/7 Online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Join -->
+    <section id="join" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">How to Join</h2>
+            <div class="join-tabs">
+                <button class="tab-btn active" data-tab="java">
+                    <i class="fas fa-coffee"></i>
+                    Pocket Edition
+                </button>
+                <button class="tab-btn" data-tab="bedrock">
+                    <i class="fas fa-mobile-alt"></i>
+                    Bedrock Edition
+                </button>
+            </div>
+            
+            <div class="tab-content active" id="java-tab">
+                <div class="join-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Open Minecraft Pocket Edition</h3>
+                            <p>Launch your Minecraft Pocket Edition client</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Go to Play</h3>
+                            <p>Tap/Click on "Play" from the main menu</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Add External Server</h3>
+                            <p>Scroll down to "Servers" tab and click "Add Server":</p>
+                            <div class="server-details">
+                                <div class="detail-row">
+                                    <strong>Server Name:</strong> Watter Craft
+                                </div>
+                                <div class="detail-row">
+                                    <strong>Server Address:</strong> 
+                                    <span class="copyable" data-copy="play.wattercraft.fun">
+                                        play.wattercraft.fun
+                                        <i class="fas fa-copy copy-icon"></i>
+                                    </span>
+                                </div>
+                                <div class="detail-row">
+                                    <strong>Port:</strong> 
+                                    <span class="copyable" data-copy="19132">
+                                        19132
+                                        <i class="fas fa-copy copy-icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Join and Explore!</h3>
+                            <p>Tap the server to connect and start your adventure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="bedrock-tab">
+                <div class="join-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Open Minecraft Bedrock</h3>
+                            <p>Launch Minecraft on your device (Mobile, Xbox, PS, Switch, or Windows 10)</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Go to Play</h3>
+                            <p>Tap/Click on "Play" from the main menu</p>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Add External Server</h3>
+                            <p>Scroll down to "Servers" tab and click "Add Server":</p>
+                            <div class="server-details">
+                                <div class="detail-row">
+                                    <strong>Server Name:</strong> Watter Craft
+                                </div>
+                                <div class="detail-row">
+                                    <strong>Server Address:</strong> 
+                                    <span class="copyable" data-copy="play.wattercraft.fun">
+                                        play.wattercraft.fun
+                                        <i class="fas fa-copy copy-icon"></i>
+                                    </span>
+                                </div>
+                                <div class="detail-row">
+                                    <strong>Port:</strong> 
+                                    <span class="copyable" data-copy="19132">
+                                        19132
+                                        <i class="fas fa-copy copy-icon"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Join and Explore!</h3>
+                            <p>Tap the server to connect and start your adventure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Server Rules -->
+    <section id="rules" class="section">
+        <div class="container">
+            <h2 class="section-title">Server Rules</h2>
+            <div class="rules-container">
+                <div class="rules-intro">
+                    <p>To ensure everyone has a great experience on Watter Craft, please follow these rules:</p>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-card">
+                        <div class="rule-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Be Respectful</h3>
+                        <p>Treat all players with respect. No harassment, bullying, or toxic behavior will be tolerated.</p>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3>No Cheating</h3>
+                        <p>No hacking, exploiting, or using unauthorized mods. Play fair and enjoy the game as intended.</p>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Clean Chat</h3>
+                        <p>Keep the chat family-friendly. No spam, excessive caps, or inappropriate language.</p>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>No Griefing</h3>
+                        <p>Don't destroy or steal from other players' builds. Respect everyone's hard work.</p>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h3>Listen to Staff</h3>
+                        <p>Follow instructions from moderators and admins. They're here to help maintain a fun environment.</p>
+                    </div>
+                    <div class="rule-card">
+                        <div class="rule-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3>Report Issues</h3>
+                        <p>If you encounter problems or rule violations, report them to staff or use our Discord server.</p>
+                    </div>
+                </div>
+                <div class="rules-footer">
+                    <p><strong>Note:</strong> Breaking these rules may result in warnings, temporary bans, or permanent bans depending on the severity. Let's keep Watter Craft a fun place for everyone!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discord Section -->
+    <section id="discord" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Join Our Community</h2>
+            <div class="discord-content">
+                <div class="discord-info">
+                    <div class="discord-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Watter Craft Discord</h3>
+                    <p>Connect with other players, get updates, ask for help, and participate in events!</p>
+                    <div class="discord-features">
+                        <div class="feature">
+                            <i class="fas fa-bullhorn"></i>
+                            <span>Server announcements</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Active community</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <span>24/7 support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-calendar"></i>
+                            <span>Events & competitions</span>
+                        </div>
+                    </div>
+                    <a href="https://discord.gg/svgGBgnbBk" class="btn btn-discord" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        Join Discord Server
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="Watter Craft" class="footer-logo">
+                    <span class="footer-title">Watter Craft</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#join">Join</a>
+                    <a href="#rules">Rules</a>
+                    <a href="https://discord.gg/svgGBgnbBk" target="_blank">Discord</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Watter Craft. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check"></i>
+        <span id="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
